@@ -1,0 +1,59 @@
+#Footer {
+  display: inline-block;
+  padding: 5vh;
+
+  border-top: $orange solid 1px;
+  background: $background-gradient-medium;
+  color: $quick-silver;
+  width: 100%;
+  margin-top: -100vh;
+
+  footer-main-div {
+    margin: 0 auto;
+    overflow: hidden;
+    position: fixed; /* Set the navbar to fixed position */
+    top: 0; /* Position the navbar at the top of the page */
+    width: 80%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  }
+
+  .footer-row {
+    padding-left: 5vh;
+    padding-right: 5vh;
+  }
+
+  .footer-logo-box {
+    width: 40%;
+    float: right;
+  }
+
+  .logo-footer {
+    margin-top: 5vh;
+    padding: 0;
+    width: 100%;
+  }
+  .second-h6 {
+    margin-top: 1vh;
+  }
+
+  h6 {
+    margin-bottom: 1vh;
+    font-weight: 700;
+  }
+
+  .footer-list {
+    margin-top: 0.2vh;
+    margin-bottom: 0.1vh;
+    margin-left: 0.6vh;
+    color: $accent-grey;
+  }
+
+  .footer-list:hover {
+    color: $orange;
+    cursor: pointer;
+  }
+
+  .copy-text {
+    font-size: calc(8px + 0.3vw);
+  }
+}

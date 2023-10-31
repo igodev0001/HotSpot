@@ -1,0 +1,219 @@
+#Map {
+  .planner-sidebar {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 2vh;
+    flex-direction: column;
+    margin-top: 12vh;
+    border-bottom: 5px $accent-grey solid;
+    position: absolute;
+    right: 0;
+    width: 18%;
+    height: 88vh;
+    background: $background-gradient-very-light;
+
+    .trip-title-intro-div {
+      width: 100%;
+      text-align: center;
+      display: inline-block;
+      flex-wrap: wrap;
+
+      .trip-title-text {
+        color: $white;
+        font-family: $title-font;
+        font-size: $font-size-large;
+      }
+    }
+
+    .list-group-item {
+      text-align: left;
+    }
+
+    .list-group-item:hover {
+      color: $gunmetal;
+    }
+
+    .trip-title {
+      display: inline-block;
+      width: 100%;
+      background-color: white;
+      color: $smoky-black;
+      font-family: $title-font;
+      font-weight: 700;
+      padding: 0;
+      font-size: 20px;
+      align-self: flex-start;
+    }
+
+    .trip-list-div {
+      max-height: 60vh;
+      overflow-y: scroll;
+    }
+
+    .trip-list {
+      width: 100%;
+      text-align: center;
+    }
+
+    .trip-name {
+      display: inline-block;
+      position: relative;
+      font-family: $body-font;
+      font-size: $font-size-large;
+      border-radius: 5px;
+      color: $smoky-black;
+      border: #9ea2a8 solid 1px;
+      width: 90%;
+      margin: 0.5vh auto;
+      background: $background-gradient-dark;
+      border: $medium-yellow solid 1px;
+      box-shadow: $button-shadows;
+    }
+
+    .trip-name:hover {
+      box-shadow: none;
+      .icon-buttons-close {
+        color: $very-light-grey;
+      }
+    }
+
+    .place-name {
+      font-family: $title-font;
+      font-size: $font-size-large;
+      font-weight: 700;
+      display: block;
+      color: $white;
+      width: 80%;
+      line-height: 1.3;
+    }
+
+    .place-type {
+      font-family: $title-font;
+      font-size: $font-size-medium;
+      color: $white;
+      text-transform: capitalize;
+      margin: 0;
+      padding: 0;
+      display: block;
+    }
+
+    .close-button-box {
+      color: $gunmetal;
+      position: absolute;
+      right: 0;
+      top: 0;
+    }
+
+    .sidebar-button-close {
+      background-color: transparent;
+      border-color: transparent;
+    }
+
+    .icon-buttons-close {
+      display: inline-block;
+      color: $super-light-grey;
+      font-size: $font-size-xxl;
+    }
+  }
+
+  .trip-button {
+    width: 100%;
+    margin: 30px auto 0 auto;
+    background: none;
+  }
+
+  .hotspot-stat-box {
+    border-top: $bright-yellow solid 1px;
+    width: 100%;
+    padding: 2vh 0;
+    text-align: center;
+    justify-content: flex-end;
+    position: relative;
+    background: $background-gradient-light;
+
+    .hotspot-title-div {
+      display: inline-block;
+    }
+
+    .hotspot-icon {
+      display: inline-block;
+      width: 13%;
+      margin-top: -6px;
+    }
+
+    .hotspot-title {
+      display: inline-block;
+      color: white;
+      font-family: $title-font;
+      font-size: $font-size-hotspot-hood-title;
+      margin: 0;
+      padding: 10px 0 0 10px;
+      z-index: 1;
+      position: relative;
+      font-weight: 700;
+    }
+  }
+
+  .hotspot-stat-number {
+    color: white;
+    font-size: 50px;
+    font-family: $title-font;
+    font-weight: 700;
+    font-size: $font-size-hotspot-number-large;
+    text-shadow: 4px 4px 2px black;
+    position: relative;
+    z-index: 1;
+  }
+
+  .score-icon-div {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    padding-top: 15px;
+  }
+
+  .hotspot-score-icon {
+    width: 80%;
+    margin: 0 auto;
+    opacity: 0.8;
+    z-index: -2;
+  }
+
+  .button-div {
+    justify-content: flex-end;
+  }
+
+  .button-div {
+    margin: 0 auto;
+    width: 90%;
+    justify-content: flex-end;
+    padding-bottom: 3vh;
+  }
+
+  .sidebar-button {
+    font-family: $title-font;
+    font-weight: 500;
+    margin-top: 1vh;
+    font-size: $font-size-medium;
+    background: $background-gradient-light;
+    display: inline-block;
+    height: 4vh;
+    font-weight: 700;
+    border: 1px $gunmetal solid;
+    box-shadow: $button-shadows;
+  }
+
+  .sidebar-button:hover {
+    box-shadow: none;
+    border: 1px $gunmetal solid;
+    color: $white;
+    background: $background-gradient-dark;
+  }
+
+  .icon-buttons {
+    margin-right: 5px;
+    margin-top: -4px;
+  }
+}

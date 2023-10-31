@@ -1,0 +1,12 @@
+body * {
+  font-family: $body-font;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  scroll-snap-type: y proximity;
+  background-color: $gunmetal;
+  display: flex;
+  flex-direction: column;
+}

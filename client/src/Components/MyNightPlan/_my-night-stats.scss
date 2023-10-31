@@ -1,0 +1,122 @@
+#MyNightPlan {
+  .stat-div {
+    position: relative;
+    margin-top: 4vh;
+
+    .stats-card {
+      width: 100%;
+      background: $background-gradient-light;
+    }
+
+    h5.stats-title {
+      padding: 0;
+      color: $white;
+    }
+
+    .stats-title {
+      font-family: $title-font;
+      font-size: $font-size-xxxl;
+      color: $white;
+      background: $background-gradient-light;
+      padding-bottom: 1vh;
+      padding-top: 1.5vh;
+    }
+
+    .stats-title-text {
+      font-family: $title-font;
+      font-size: $font-size-xxxl;
+      color: $white;
+      font-weight: 700;
+      text-shadow: $text-shadow-title;
+      padding-bottom: 1.5vh;
+      height: 3vh;
+    }
+
+    .card-text {
+      font-family: $title-font;
+      color: $white;
+    }
+
+    .stats-box {
+      top: 0;
+      font-family: $title-font;
+      color: $white;
+      border-bottom: 1px solid $quick-silver;
+      padding-bottom: 0.5vh;
+      width: 100%;
+      margin-top: 8vh;
+    }
+
+    .hotspot-score-col {
+      display: inline-block;
+      width: 100%;
+
+      h5.hotspot-score-title {
+        font-family: $title-font;
+        display: block;
+        width: 100%;
+        text-align: center;
+        margin: 0 auto;
+      }
+
+      p.hotspot-score-number {
+        display: block;
+        margin: 0 auto;
+        color: $white;
+        font-size: 50px;
+        font-family: $title-font;
+        font-weight: 700;
+        font-size: $font-size-hotspot-number-stat-box;
+        text-shadow: 8px 8px 4px black;
+      }
+    }
+
+    .chart-container-div {
+      display: inline-block;
+      margin: 0 auto;
+      width: 80%;
+    }
+
+    .chart-col {
+      margin: 0;
+      padding: 0;
+    }
+
+    .stats-icon {
+      color: $bright-yellow;
+      font-size: $font-size-xxl;
+      padding-left: 5px;
+    }
+
+    .canvasjs-chart-canvas {
+      background-color: transparent !important;
+      display: inline-block;
+      width: 50%;
+    }
+
+    .canvasjs-chart-container {
+      background-color: transparent !important;
+      right: 0;
+    }
+
+    .canvasjs-chart-credit {
+      display: none;
+    }
+
+    .canvasjs-chart-toolbar {
+      display: none;
+    }
+  }
+
+  .time-stats-card {
+    width: 100%;
+
+    .time-stats-card-body {
+      color: $smoky-black;
+    }
+
+    .time-stats-card-text {
+      color: $smoky-black;
+    }
+  }
+}

@@ -1,0 +1,136 @@
+@import "./TripSidebar/trip-sidebar";
+@import "./HoodSidebar/hood-sidebar";
+@import "./CurrentSelectionCard/current-selection-card";
+@import "./MapHeader/map-header";
+@import "./HeatMapSlider/heat-map-slider";
+
+@keyframes shadow-pulse {
+  0% {
+    box-shadow: 0 0 0 0px rgba(0, 0, 0, 0.2);
+  }
+  100% {
+    box-shadow: 0 0 0 10px rgba(0, 0, 0, 0);
+  }
+}
+
+#Map {
+  display: inline-block;
+  width: 100%;
+  height: 100vh;
+  text-align: center;
+  margin-bottom: 0;
+  position: relative;
+
+  .hood-main-title {
+    font-family: $title-font;
+    font-weight: 700;
+    font-size: $font-size-title;
+    display: block;
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 1.5vh;
+  }
+
+  .map-container {
+    margin: 0;
+    width: 100%;
+    border-top: 2px $accent-grey solid;
+    border-bottom: 5px $accent-grey solid;
+    height: 100vh;
+    position: absolute;
+    scroll-snap-align: start;
+  }
+
+  .gm-style {
+    font-size: 200px !important;
+  }
+
+  .heatmap-toggle-div {
+    position: absolute;
+    display: inline-block;
+    left: 24.75%;
+    top: 0.7vh;
+    width: 5%;
+    z-index: 4;
+    padding: 2vh 1.5vh 0.5vh 3vh;
+    min-height: 0.8vh;
+    border-radius: 10px;
+
+    .heatmap-toggle-button {
+      font-family: $condensed-font;
+      font-weight: 700;
+      background: transparent;
+      padding: 0.6vh 0.5vh 0vh 1vh;
+      margin-left: 2px;
+      font-size: $font-size-filter-buttons;
+      text-transform: uppercase;
+      font-weight: 700 !important;
+    }
+
+    .heatmap-filter {
+      display: inline-block;
+      padding: 0 0.5vh;
+    }
+
+    .MuiTypography-body1 {
+      font-family: $condensed-font;
+      color: $light-weight;
+      white-space: nowrap;
+      font-weight: 700;
+    }
+
+    .MuiSwitch-switchBase {
+      color: $accent-grey;
+    }
+  }
+
+  .marker-toggle-div {
+    position: absolute;
+    display: inline-block;
+    left: 18.75%;
+    top: 0.7vh;
+    width: 5%;
+    z-index: 4;
+    padding: 2vh 1.5vh 0.5vh 3vh;
+    min-height: 0.8vh;
+    border-radius: 10px;
+
+    .heatmap-toggle-button {
+      font-family: $condensed-font;
+      font-weight: 700;
+      background: transparent;
+      padding: 0.6vh 0.5vh 0vh 1vh;
+      margin-left: 2px;
+      font-size: $font-size-filter-buttons;
+
+      font-weight: 700 !important;
+    }
+
+    .MuiTypography-body1 {
+      font-family: $condensed-font;
+      font-weight: 500;
+      color: $light-weight;
+      white-space: nowrap;
+    }
+
+    .MuiSwitch-switchBase {
+      color: $accent-grey;
+    }
+
+    .MuiTouchRipple-root {
+      color: $accent-grey;
+    }
+  }
+
+  .filter-icons-toggle {
+    color: $light-weight;
+    font-size: $font-size-icons;
+    position: absolute;
+    margin-top: 4px;
+    left: 0;
+    margin-left: 1.8vh;
+  }
+}

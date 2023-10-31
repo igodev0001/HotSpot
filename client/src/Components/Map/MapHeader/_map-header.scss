@@ -1,0 +1,136 @@
+#Map {
+  .map-header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 60%;
+    margin: 0 auto;
+    min-height: 7vh;
+    z-index: 3;
+    border-top: 2px $accent-grey solid;
+    // -webkit-box-shadow: $map-shadow-header;
+    // -moz-box-shadow: $map-shadow-header;
+    // box-shadow: $map-shadow-header;
+    // background: $background-gradient-medium;
+    // border-bottom: 1px solid rgba($dark-quick-silver, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    justify-self: center;
+    padding-left: 2vh;
+
+    .filter-box-div {
+      display: inline-block;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: row;
+
+      .filter-prompt {
+        padding-top: 1.5vh;
+        display: inline-block;
+        font-size: $font-size-map-header-prompt;
+        color: $light-weight;
+        font-family: $title-font;
+        white-space: nowrap;
+        line-height: 0.6;
+        font-weight: 700;
+        text-shadow:$map-shadow-header;
+      }
+
+      .btn-secondary {
+        background-color: transparent;
+        border: none;
+        font-family: $title-font;
+        font-size: $font-size-map-header-prompt;
+        color: $light-weight;
+        font-weight: 700;
+        line-height: 1;
+        border-radius: 0;
+        text-shadow:$map-shadow-header;
+      }
+
+      .drop-down-button {
+        background-color: transparent;
+      }
+
+      .drop-down-menu {
+        background: $light-weight;
+      }
+
+      .dropdown-item {
+        font-family: $title-font;
+        font-size: $font-size-filter-buttons;
+        color: $smoky-black;
+      }
+
+      .dropdown-item:hover {
+        font-family: $title-font;
+        font-size: $font-size-filter-buttons;
+        color: $smoky-black;
+      }
+
+      .drop-down-toggle {
+        background-color: none;
+      }
+
+      .dropdown-buttons {
+        padding: 0vh 0.4vh;
+      }
+
+      .time-keeper-dropdown {
+        margin-left: -8vh;
+      }
+    }
+
+    .hood-header-box {
+      display: inline-block;
+      text-align: center;
+      display: none;
+
+      h4.selected-hood {
+        font-family: $title-font;
+        font-size: $font-size-hooder-header;
+        font-weight: 700;
+        color: $light-weight;
+        line-height: 1;
+        padding: 0;
+        margin: 0;
+      }
+    }
+
+    .button-row {
+      display: inline-block;
+
+      display: flex;
+      display: none;
+      align-items: center;
+      justify-content: center;
+      flex-direction: row;
+      border-color: $light-weight;
+      color: $light-weight;
+      padding-right: 5%;
+
+      .filter-icons {
+        font-size: $font-size-filter-icon-button;
+        margin-top: -1px;
+      }
+      .filter-buttons:hover {
+        border-color: $accent-grey;
+      }
+    }
+
+    .filter-buttons {
+      background: transparent;
+      font-size: $font-size-filter-button-toolbar;
+
+      font-weight: 400;
+    }
+
+    .filter-icons {
+      margin-right: 4px;
+    }
+  }
+}
